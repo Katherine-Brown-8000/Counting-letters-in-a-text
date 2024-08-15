@@ -1,0 +1,25 @@
+file_path = 'C:/Users/your_username/Desktop/book genres.txt'
+
+def count_letters(text):
+    text = text.lower()
+
+    letter_count = {}
+
+    for char in text:
+        if char.isalpha():
+            if char in letter_count:
+                letter_count[char] += 1
+            else:
+                letter_count[char] = 1
+
+    return letter_count
+
+def read_file(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read().strip()
+    return content
+
+text = read_file(file_path)
+
+result = count_letters(text)
+print(result)
