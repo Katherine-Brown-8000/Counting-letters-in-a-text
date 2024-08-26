@@ -1,4 +1,4 @@
-file_path = r'C:/Users/scien/Desktop/book genres.txt'
+file_path = r'C:/Users/username/Desktop/book genres.txt'
 
 def count_letters(text):
     text = text.lower()
